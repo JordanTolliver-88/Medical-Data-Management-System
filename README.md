@@ -63,14 +63,14 @@ Here, I have written out a SOME of the ERD relationship before displaying it in 
 
 # Database creation and Data Insertion using SQL:
 
-Below is the SQL used to create the database application system for a mid-size health insurance company:
+## Below is the SQL used to create the database application system for a mid-size health insurance company:
 
 **Here, I started by using SQL to create the databases.**
 
 CREATE DATABASE HealthOne;
 USE HealthOne;
 
-Now that the Database is set up, I can input the required tables while prioritizing Data Modeling Requirements and Normalization Standards as specified [HERE](https://github.com/JordanTolliver-88/Database-Normalization-and-Specialized-Relationship-Modeling-Requirements/blob/main/README.md)
+**Now that the Database is set up, I can input the required tables while prioritizing Data Modeling Requirements and Normalization Standards as specified [HERE](https://github.com/JordanTolliver-88/Database-Normalization-and-Specialized-Relationship-Modeling-Requirements/blob/main/README.md)**
 
 CREATE TABLE INSURANCE (
     Insurance_Company_ID INT PRIMARY KEY AUTO_INCREMENT,
