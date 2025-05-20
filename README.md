@@ -73,96 +73,48 @@ USE HealthOne;
 **Now that the Database is set up, I can input the required tables while prioritizing Data Modeling Requirements and Normalization Standards as specified [HERE](https://github.com/JordanTolliver-88/Database-Normalization-and-Specialized-Relationship-Modeling-Requirements/blob/main/README.md)**
 
 CREATE TABLE INSURANCE (
-    Insurance_Company_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Insurance_Company VARCHAR(100) NOT NULL,
-    Phone VARCHAR(15)
-);
+
+<img width="538" alt="INSURANCE" src="https://github.com/user-attachments/assets/dab5cafe-c71e-4eac-b8ee-37db5f17e8bd" />
 
 CREATE TABLE PATIENT (
-    Patient_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Name VARCHAR(100) NOT NULL,
-    Address VARCHAR(255),
-    Phone VARCHAR(15),
-    Email VARCHAR(100),
-    Insurance_Company_ID INT,
-    FOREIGN KEY (Insurance_Company_ID) REFERENCES INSURANCE(Insurance_Company_ID)
-);
+
+<img width="714" alt="PAITIENT" src="https://github.com/user-attachments/assets/31e79039-3046-4c17-9e61-bb7261201e34" />
 
 CREATE TABLE DOCTOR (
-    Doctor_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Name VARCHAR(100) NOT NULL,
-    Address VARCHAR(255),
-    Phone VARCHAR(15),
-    Specialization VARCHAR(100)
-);
+
+<img width="442" alt="DOCTOR" src="https://github.com/user-attachments/assets/ab552322-389d-4a33-b5be-8273ba915ddf" />
 
 CREATE TABLE PRIMARY_DOCTOR_HISTORY (
-    Patient_ID INT,
-    Start_Date DATE,
-    End_Date DATE,
-    Reason_For_Leaving VARCHAR(255),
-    PRIMARY KEY (Patient_ID, Start_Date),
-    FOREIGN KEY (Patient_ID) REFERENCES PATIENT(Patient_ID)
-);
+
+<img width="544" alt="PRIMARY DOC " src="https://github.com/user-attachments/assets/a02826a1-0d90-486e-b6da-3e2a72f3aa5e" />
 
 CREATE TABLE HOSPITAL (
-    Hospital_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Name VARCHAR(100) NOT NULL,
-    Address VARCHAR(255),
-    Phone VARCHAR(15)
-);
+
+<img width="465" alt="HOSPITAL" src="https://github.com/user-attachments/assets/77e202e6-6ad7-4691-a1a6-27a8b0959ae7" />
 
 CREATE TABLE HOSPITAL_AFFILIATION (
-    Doctor_ID INT,
-    Hospital_ID INT,
-    Date_Of_Affiliation DATE,
-    PRIMARY KEY (Doctor_ID, Hospital_ID),
-    FOREIGN KEY (Doctor_ID) REFERENCES DOCTOR(Doctor_ID),
-    FOREIGN KEY (Hospital_ID) REFERENCES HOSPITAL(Hospital_ID)
-);
+
+<img width="586" alt="HOSPITAL AFFILIATION" src="https://github.com/user-attachments/assets/846855a1-7904-4d1b-ba25-cacd96e5dcc7" />
 
 CREATE TABLE PRESCRIPTION (
-    RX_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Doctor_ID INT,
-    Patient_ID INT,
-    Date_Prescribed DATE,
-    Dosage VARCHAR(50),
-    Duration VARCHAR(50),
-    FOREIGN KEY (Doctor_ID) REFERENCES DOCTOR(Doctor_ID),
-    FOREIGN KEY (Patient_ID) REFERENCES PATIENT(Patient_ID)
-);
+
+<img width="532" alt="PRESCRIPTION" src="https://github.com/user-attachments/assets/8ee3e587-8ac6-422a-926f-3abc47339a1c" />
 
 CREATE TABLE DRUG (
-    Drug_ID INT PRIMARY KEY AUTO_INCREMENT,
-    Name VARCHAR(100),
-    Side_Effects VARCHAR(255),
-    Benefits VARCHAR(255)
-);
+
+<img width="426" alt="DRUG" src="https://github.com/user-attachments/assets/258a6925-ce9e-4cf2-89b6-f8e44575a778" />
 
 CREATE TABLE REFFILABLE (
-    RX_ID INT,
-    Num_Of_Refills INT,
-    Comments VARCHAR(255),
-    PRIMARY KEY (RX_ID),
-    FOREIGN KEY (RX_ID) REFERENCES PRESCRIPTION(RX_ID)
-);
+
+<img width="505" alt="REFFILABLE" src="https://github.com/user-attachments/assets/9594e3fd-5b70-428e-ba8f-25e2fa6f33a6" />
 
 CREATE TABLE NON_REFFILABLE (
-    RX_ID INT,
-    Reason VARCHAR(255),
-    PRIMARY KEY (RX_ID),
-    FOREIGN KEY (RX_ID) REFERENCES PRESCRIPTION(RX_ID)
-);
+ 
+<img width="502" alt="NON REFUN  copy" src="https://github.com/user-attachments/assets/e9a7e7f0-a423-40ec-a1ec-ae2d6965781f" />
 
 CREATE TABLE OFFICE_VISIT (
-    Patient_ID INT,
-    Doctor_ID INT,
-    Date_Of_Visit DATE,
-    Symptoms VARCHAR(255),
-    PRIMARY KEY (Patient_ID, Doctor_ID, Date_Of_Visit),
-    FOREIGN KEY (Patient_ID) REFERENCES PATIENT(Patient_ID),
-    FOREIGN KEY (Doctor_ID) REFERENCES DOCTOR(Doctor_ID)
-);
+
+<img width="543" alt="office visit" src="https://github.com/user-attachments/assets/3f1f7ec8-f3ca-4676-a6e2-1f9226dc2eb2" />
 
 # Inserting Data into Tables
 
