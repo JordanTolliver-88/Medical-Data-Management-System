@@ -8,7 +8,7 @@ Acting as a small database consulting company specializing in developing databas
 - Included Recursive Relationships
 - Modified the ERD to make this distinction using an arc.
 
-Learn more about each of these requirements and Standards [HERE]([https://www.example.com](https://github.com/JordanTolliver-88/Database-Normalization-and-Specialized-Relationship-Modeling-Requirements/blob/main/README.md))
+Learn more about each of these requirements and Standards [HERE](https://github.com/JordanTolliver-88/Database-Normalization-and-Specialized-Relationship-Modeling-Requirements/blob/main/README.md)
 
 # Determining entities, attributes, UIDs
 ## Tables include
