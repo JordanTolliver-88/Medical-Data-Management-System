@@ -120,53 +120,46 @@ CREATE TABLE OFFICE_VISIT (
 
 Now that the database and tables are created, I will insert DUMMY DATA into the tables
  
-INSERT INTO INSURANCE (Insurance_Company, Phone) VALUES 
-('HealthGuard', '123-456-7890'),
-('MediPlus', '123-111-2345'),
-('LifeCare', '987-654-3210');
+INSERT INTO INSURANCE (
 
-INSERT INTO PATIENT (Name, Address, Phone, Email, Insurance_Company_ID) VALUES 
-('John Doe', '123 Elm St', '123-456-7891', 'john.doe@example.com', 1),
-('Jane Smith', '456 Maple Rd', '987-654-3211', 'jane.smith@example.com', 2),
-('Sam Wilson', '789 Oak Ave', '321-654-9870', 'sam.wilson@example.com', 3);
+<img width="521" alt="Insurance" src="https://github.com/user-attachments/assets/2ccab85f-c6dc-48cd-bfe8-ad9497ac8e78" />
 
-INSERT INTO DOCTOR (Name, Address, Phone, Specialization) VALUES 
-('Dr. Alice Brown', '111 Medical St', '123-321-1234', 'Cardiology'),
-('Dr. Bob White', '222 Healing Rd', '432-543-2345', 'General Medicine'),
-('Dr. Carol Green', '333 Health Ave', '654-765-3456', 'Pediatrics');
+INSERT INTO PATIENT (
 
-INSERT INTO PRIMARY_DOCTOR_HISTORY (Patient_ID, Start_Date, End_Date, Reason_For_Leaving) VALUES 
-(1, '2023-01-10', '2023-12-01', 'Moved to a new location'),
-(2, '2022-05-15', '2022-11-10', 'Preferred a specialist'),
-(3, '2023-03-20', NULL, '');
+<img width="698" alt="PATIENT copy" src="https://github.com/user-attachments/assets/00218d19-e4fd-4a2e-85fa-f3e99191c0ad" />
 
-INSERT INTO HOSPITAL (Name, Address, Phone) VALUES 
-('Central Health Hospital', '987 Medical Blvd', '123-123-1234'),
-('Northside Hospital', '654 Recovery Rd', '987-987-9876');
+INSERT INTO DOCTOR (
 
-INSERT INTO HOSPITAL_AFFILIATION (Doctor_ID, Hospital_ID, Date_Of_Affiliation) VALUES 
-(1, 1, '2022-06-15'),
-(2, 2, '2023-02-20'),
-(3, 1, '2023-01-12');
+<img width="671" alt="DAOCTOR" src="https://github.com/user-attachments/assets/2fd628a0-05d3-4dde-8a11-ee56b2d2e43f" />
 
-INSERT INTO PRESCRIPTION (Doctor_ID, Patient_ID, Date_Prescribed, Dosage, Duration) VALUES 
-(1, 1, '2023-11-01', '500 mg', '2 weeks'),
-(2, 2, '2023-10-15', '250 mg', '1 month'),
-(3, 3, '2023-09-20', '100 mg', '10 days');
+INSERT INTO PRIMARY_DOCTOR_HISTORY (
 
-INSERT INTO DRUG (Name, Side_Effects, Benefits) VALUES 
-('Aspirin', 'Nausea, Headache', 'Pain relief'),
-('Ibuprofen', 'Drowsiness, Upset Stomach', 'Anti-inflammatory'),
-('Amoxicillin', 'Diarrhea, Allergic Reaction', 'Antibiotic');
+<img width="962" alt="PRIMARY DOC" src="https://github.com/user-attachments/assets/3c105f70-8fb3-4489-97b5-1ced21e16a21" />
 
-INSERT INTO REFFILABLE (RX_ID, Num_Of_Refills, Comments) VALUES 
-(1, 2, 'Patient should revisit after refills are used up'),
-(2, 3, 'Monitor usage and side effects');
+INSERT INTO HOSPITAL (
 
-INSERT INTO NON_REFFILABLE (RX_ID, Reason) VALUES 
-(3, 'Potential for overuse and allergic reaction');
+<img width="632" alt="HOSPITAL" src="https://github.com/user-attachments/assets/7b0fa5df-c030-439d-9b01-74202f3363ea" />
 
-INSERT INTO OFFICE_VISIT (Patient_ID, Doctor_ID, Date_Of_Visit, Symptoms) VALUES 
-(1, 1, '2023-11-05', 'Chest pain and dizziness'),
-(2, 2, '2023-10-20', 'Persistent cough and fever'),
-(3, 3, '2023-09-25', 'Rash on arms and legs');
+INSERT INTO HOSPITAL_AFFILIATION (
+
+<img width="753" alt="HOSPITAL AFFILIATION" src="https://github.com/user-attachments/assets/16b73dad-1d20-446c-8d58-fc7900dcbbae" />
+
+INSERT INTO PRESCRIPTION (
+
+<img width="772" alt="PRESCRIPTION copy" src="https://github.com/user-attachments/assets/8653c8e7-a23f-4e97-a089-b42649acd8ce" />
+
+INSERT INTO DRUG (
+
+<img width="612" alt="DRUG" src="https://github.com/user-attachments/assets/4f0b7bda-c2d6-4469-8c15-2ec1075bb8ec" />
+
+INSERT INTO REFFILABLE (
+
+<img width="588" alt="REFILABLE" src="https://github.com/user-attachments/assets/bcf949a0-375e-4214-a6fc-cf74e3f3dc3b" />
+
+INSERT INTO NON_REFFILABLE (
+
+<img width="562" alt="NON RE" src="https://github.com/user-attachments/assets/52e31fe5-8592-4f00-93ec-bf96ff850b2d" />
+
+INSERT INTO OFFICE_VISIT (
+
+<img width="725" alt="OFFICE VISIT" src="https://github.com/user-attachments/assets/50446696-c3f5-44a8-ba24-b2bf26717d85" />
