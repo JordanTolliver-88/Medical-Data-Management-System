@@ -2,6 +2,13 @@
 
 Acting as a small database consulting company specializing in developing databases for the medical industry. I have just been awarded the contract to develop a data model for a database application system for a mid-size health insurance company to keep track of health claims, including patient information, provider(doctor) information, information about patient visits to their doctor, as well as prescription drugs prescribed to patients.
 
+## Advanced Data Modeling Requirements and Normalization Standards
+- Emphasize modeling for historical Data: include an entity showing a history of previous primary care doctors and the dates that the doctor was assigned to a particular patient.
+- Made sure to include all 3 stages of normalization in the ERD
+- Included Recursive Relationships
+- Modified the ERD to make this distinction using an arc.
+
+Learn more about each of these requirements and Standards [HERE]([https://www.example.com](https://github.com/JordanTolliver-88/Database-Normalization-and-Specialized-Relationship-Modeling-Requirements/blob/main/README.md))
 
 # Determining entities, attributes, UIDs
 ## Tables include
@@ -53,3 +60,7 @@ Here, I have written out each ERD relationship before displaying it in an Entity
 - Each **PRESCRIPTION** must be prescribed by one and only one **DOCTOR**.
 
 ![HealthOneERD](https://github.com/user-attachments/assets/31825893-1321-4d00-bc1f-9762461d4372)
+
+
+
+
